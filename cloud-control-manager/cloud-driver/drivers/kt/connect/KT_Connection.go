@@ -141,3 +141,7 @@ func (cloudConn *KTCloudVpcConnection) CreateTagHandler() (irs.TagHandler, error
 func (cloudConn *KTCloudVpcConnection) CreateQuotaInfoHandler() (irs.QuotaInfoHandler, error) {
 	return nil, fmt.Errorf("KT Cloud VPC Driver: QuotaInfoHandler not supported")
 }
+
+func (cloudConn *KTCloudVpcConnection) CreateMonitoringHandler() (irs.MonitoringHandler, error) {
+	return nil, fmt.Errorf("KT Cloud VPC Driver: not implemented")
+}

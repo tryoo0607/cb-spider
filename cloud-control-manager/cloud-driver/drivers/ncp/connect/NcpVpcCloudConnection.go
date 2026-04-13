@@ -194,3 +194,7 @@ func (cloudConn *NcpVpcCloudConnection) CreateFileSystemHandler() (irs.FileSyste
 func (cloudConn *NcpVpcCloudConnection) CreateQuotaInfoHandler() (irs.QuotaInfoHandler, error) {
 	return nil, fmt.Errorf("NCP VPC Cloud Driver: QuotaInfoHandler not supported")
 }
+
+func (cloudConn *NcpVpcCloudConnection) CreateMonitoringHandler() (irs.MonitoringHandler, error) {
+	return nil, fmt.Errorf("NCP VPC Cloud Driver: not implemented")
+}
